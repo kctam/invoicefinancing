@@ -1,5 +1,5 @@
 echo "Upon all process, Bank Alpha decides to provide \$1,000 loan on this invoice. "
-echo "Bank Alpha invokes requestLoan() for this loan."
+echo "Bank Alpha invokes requestLoan() for this loan but wrongly type \$10,000."
 echo
 peer chaincode invoke -C invoice -n inv --peerAddresses peer0.bankalpha.example.com:7051 --peerAddresses peer0.bankbeta.example.com:7051 -c '{"Args":["requestLoan","lambda","inv01","10000"]}'
 echo
